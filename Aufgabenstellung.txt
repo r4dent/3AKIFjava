@@ -1,0 +1,280 @@
+<LINK REL="stylesheet" TYPE="text/css" HREF="eigenestyles.css">
+
+# Kapitel 3 - Variablen
+
+## Hinweise für alle folgenden Aufgaben
+### Usability
+Alle Programme, die sie in weitere Folge schreiben, sollen möglichst benutzerfreundlich gestaltet werden. Dazu gehören gute Aufforderungen für Eingaben, sodass der Benutzer genau weiß, was er eingeben muss. Dazu gehören aber auch aussagekräfte Ausgaben des Ergebnisses.
+
+### Struktogramme zur Planung
+Zeichnen Sie zur Planung der Implementierung ihrer Programme bevor Sie mit der Codierung beginnen so oft wie möglich ein Struktogramm. Verwenden Sie dazu folgendes Werkzeug:
+
+https://dditools.inf.tu-dresden.de/dev/struktog/
+
+Hier finden Sie eine Erklärung für Struktogramme: https://de.wikipedia.org/wiki/Nassi-Shneiderman-Diagramm
+
+## Kreditvergaberichtlinien
+Künftig müssen Kreditnehmer:innen 20 % des Kaufpreises in Form von Eigenkapital aufbringen, die Kreditrate darf 40 % des Haushaltsnettoeinkommens nicht überschreiten und die Kreditlaufzeit wird auf maximal 35 Jahre begrenzt.
+
+Schreiben Sie ein Java-Programm, das den Benutzer auffordert, den Kaufpreis einer Immobilie einzugeben und daraufhin ausgibt, wieviel Eigenkapital der Kreditnehmer aufbringen muss. Das Programm fragt außerdem die voraussichtliche Kreditrate ab und berechnet wieviel der Haushalt des Kreditnehmers monatlich mindestens als Einkommen vorweisen muss.
+
+Beispielablauf:
+
+```
+--------------- KREDITVERGABE ---------------
+Bitte geben Sie den Kaufpreis der gewünschten Immobilie an:
+> 546000
+Sie müssen mindestens 109200 Euro an Eigenkapital für die Finanzierung aufbringen.
+
+Bitte geben Sie die geschätzte monatliche Kreditrate ein:
+> 890
+Sie müssen im Monat im gesamten Haushalt mindestens 2225 Euro Netto zur Verfügung haben.
+```
+
+## Body Mass Index
+Der Body-Mass-Index – auch Körpermasseindex (KMI), Körpermassenzahl (KMZ) oder Quetelet-Kaup-Index – ist eine Maßzahl für die Klassifizierung des Körpergewichts eines Menschen in Relation zu seiner Körpergröße. Sie wurde 1832 von Adolphe Quetelet sowie nach dem Ersten Weltkrieg von Ignaz Kaup entwickelt.
+
+Der Body-Mass-Index wird folgendermaßen berechnet:
+
+BMI = m / l²
+
+... wobei m die Körpermasse (in Kilogramm) und l die Körperlänge (in Metern) angibt. Der BMI wird also in der Maßeinheit kg pro m² angegeben.
+
+Schreiben Sie ein Java-Programm, das den Benutzer nach seinem Gewicht in Kilogramm und nach seiner Größe in cm fragt, den BMI berechnet und diesen als Ergebnis ausgibt.
+
+## Quadratgleichungen (Gailer-Tutorial)
+Angenommen, Sie sind an den Werten der Quadratgleichung 3x² - 8x + 4 für verschiedene Werte von x interessiert.
+
+Schreiben Sie ein Programm mit einer Variablen x vom Typ double. Der Benutzer wird aufgefordert, einen Wert für x einzugeben. Weisen Sie der Variablen einen Wert zu. Schreiben Sie eine Anweisung, die den Wert der Quadratgleichung berechnet und das Ergebnis in eine andere Variable vom Typ double schreibt.
+
+Lassen Sie das Ergebnis ausgeben, ungefähr in der Form:
+
+Bei x = 4.0 ergibt die Quadratgleichung den Wert 20.0
+
+Führen Sie das Programm für verschiedene Werte von x aus und betrachten Sie das Ergebnis. Verwenden Sie Dezimalwerte, große und kleine Werte, negative Werte und Nullwerte. Die Quadratgleichung sollte bei x = 2.0 und bei x = 2/3 den Wert 0 ergeben. Testen Sie diese Werte für x. Ist das Ergebnis richtig?
+
+## Durchschnittliche Niederschlagsmenge (Gailer-Tutorial)
+Schreiben Sie ein Programm, das die durchschnittliche Niederschlagsmenge für ein Quartal berechnet. Der Benutzer gibt also jeweils den Monatsnamen und den dazugehörigen Wert der durchschnittlichen Niederschlagsmenge in mm pro Quadratmeter ein.
+
+```
+Bitte erstes Monat eingeben:
+April
+Bitte Niederschlagswert des ersten Monats eingeben:
+12
+Bitte zweites Monat eingeben:
+Mai
+Bitte Niederschlagswert des zweiten Monats eingeben:
+14
+Bitte drittes Monat eingeben:
+Juni
+Bitte Niederschlagswert des dritten Monats eingeben:
+8
+
+Niederschlag im April:  12
+Niederschlag im Mai  :  14
+Niederschlag im Juni :  8
+Durchschnitt:           11.333333333333334
+```
+Hinweis: Verwenden Sie das Tabulatorzeichen '\t', um die Zahlen auszurichten.
+
+## Trigonometrie (Gailer-Tutorial)
+Es ist manchmal schwierig in Bogenmaß zu denken; wir würden lieber Grad verwenden. Erinnern Sie sich (an jene dunklen Klassentage mit Trigonometrie), dass es PI Bogenmaß je 180 Grad gibt. Also um einen Winkel, gegeben in Grad, in Bogenmaß umzurechnen, tun Sie das:
+
+```
+bogenmass = grad * Math.PI/180
+```
+
+Schreiben Sie ein Programm, das die Grad vom Benutzer abfragt und als Ergebnis das entsprechende Bogenmaß ausgibt.
+
+## Quader
+Implementieren Sie ein Java-Programm, welches aus den einzugebenden Werten für die Kanten die Summe der Kantenlängen, die Oberfläche und das Volumen eines Quaders berechnet.
+
+## Kreisring
+Nach Eingabe der notwendigen Daten soll der Flächeninhalt eines Kreisrings berechnet werden.
+
+Geben Sie einen geeigneten Algorithmus zur Lösung des Problems als Struktogramm an.
+Implementieren Sie das Programm in Java.
+
+## Kegel
+Von einem geraden Kegel sind der Radius r und die Höhe h bekannt. Daraus sind die Seitenlinie s, die Oberfläche O und das Volumen V zu berechnen.
+
+Geben Sie einen geeigneten Algorithmus zur Lösung des Problems als Struktogramm an.
+Implementieren Sie das Programm in Java.
+
+## Handyrechnung
+Eine Firma bietet folgenden Handytarif an:
+
+Monatlich ist eine Grundgebühr von 9,99 € zu bezahlen. Darin inkludiert sind 1000 Freiminuten und 10 GB an Daten. Jede weitere Minute kostet dann 20 Cent, jedes weitere angefangene Gigabyte 1,5 Euro.
+
+Implementieren Sie ein Java-Programm welches die monatlichen Kosten berechnen kann. Dazu fragt das Programm den Benutzer nach den verbrauchten Gesprächsminuten und Gigabyte.
+
+## Maklerfirma
+Eine Maklerfirma verkauft Grundstücke. Schreibe ein Programm, das für ein rechteckiges Grundstück die Längen der Seiten (in Meter) und den Quadratmeterpreis Netto einliest. Gib dazu eine Rechnung auf dem Bildschirm aus, die die eingegebenen Daten, den Grundstückspreis Netto, die Maklergebühr von 3%, die Grunderwerbsteuer, sowie den Gesamtbetrag enthält.
+
+## Alter berechnen
+Implementieren Sie ein Programm, das den Namen, das aktuelle Jahr und das Geburtsjahr des Benutzers einließt. Dann soll das das Alter des Benutzers ausgegeben werden. Dazu muss noch in Erfahrung gebracht werden, ob der Benutzer in diesem Jahr schon Geburtstag hatte. Der Dialog, der bei der Ausführung des Programms entsteht, könnte zum Beispiel so aussehen:
+
+```
+Hallo, wie heißt du?
+Mia
+Welches Jahr haben wir, Mia?
+Jahr: 2005
+In welchem Jahr bist du geboren?
+Jahr: 2001
+Mia, wenn du heuer noch nicht Geburtstag hattest, bist du 4 Jahre alt, ansonsten 5 Jahre alt.
+```
+
+## Wochenlohn
+Unser Geschäftsführer benötigt ein Programm zur Wochenlohnberechnung. Als Eingaben sind die Anzahl der Arbeitsstunden, die Anzahl der Überstunden und der Stundenlohn. Für Überstunden muss zudem ein Zuschlag von 20 Prozent auf den Stundenlohn gewährt werden.
+
+## Stromzähler
+Schreiben Sie ein Programm, das die Differenz des tatsächlichen (abgelesenen) und im Voraus geschätzten Stromverbrauchs berechnet und auf Basis dieser Differenz den neuen monatlichen Mehr- oder Minderbetrag für das neue Jahr berechnet und ausgibt. Wir rechnen mit einem Kilowatt-Stundenpreis von 25 Cent.
+
+```
+Bitte den geschätzten Verbrauch für das abgelaufene Jahr in Kilowatt-Stunden eingeben:
+2200
+Bitte den tatsächlichen Verbrauch im abgelaufenen Jahr in Kilowatt-Stunden eingeben:
+2534
+Differenz:
+334
+Bei einem angenommenen Preis einer Kilowatt-Stunde von 25 Cent ergibt sich ein monatlicher Mehrbetrag / Minderbetrag von 6,958333333 Euro pro Monat für das kommende Jahr.
+```
+
+Implementieren Sie das Programm in Java.
+
+Achten Sie auf eine „schöne“ Ausgabe.
+
+## Cowsay
+
+1. Geben Sie mit Hilfe von Java das folgende ASCII-Bildchen aus, wobei der Text "Java rocks!" vom Benutzer des Programmes selbst eingegeben werden können soll!
+
+```
+Bitte geben Sie einen Text ein:
+Java rocks!
+
+Hier ihr ASCII-Bildchen:
+
+ _____________
+< Java rocks! >
+ -------------
+       \   ^__^
+        \  (oo)\_______
+           (__)\       )\/\
+               ||----w |
+               ||     ||
+```
+
+## Kassenbon
+Erstellen Sie einen Kassenbon. Geben Sie dazu 4 verschiedene Waren ein, dazu die Anzahl und den Einzelpreis. Danach sollte die Summe ausgegeben werden und der User entscheidet, wie viel Geld er gibt. Danach wird der Kassenbon mit dem Restgeldbetrag ausgegeben, z. B.:
+
+```
+Wurst      1 x  4.20 EUR
+                          4.20 EUR
+Käse       1 x  2.30 EUR
+                          2.30 EUR
+Brot       1 x  2.10 EUR
+                          2.10 EUR
+DVD        2 x 12.00 EUR
+                         24.00 EUR
+----------------------------------
+Gesamt                   32.60 EUR
+Gegeben                  50.00 EUR
+
+Zurück                   17.40 EUR
+```
+
+## Baumarkt
+In einem Baumarkt werden folgende Preise verlangt:
+
+- 5 Cent pro Schraube
+- 3 Cent pro Mutter
+- 1 Cent pro Unterlegscheibe
+
+Implementieren Sie ein Programm, welches den Anwender nach der Anzahl der Schrauben, Muttern und Unterlegscheiben fragt und dann den Gesamtbetrag berechnet und ausgibt.
+
+## SVG-Zeichnung
+Mit SVG lassen sich Vektografiken erstellen und einfach in einem Browser darstellen. Auf der folgenden Seite können Sie einfach SVG-Grafiken programmieren und anzeigen lassen:
+
+[https://www.w3schools.com/graphics/tryit.asp?filename=trysvg_circle](https://www.w3schools.com/graphics/tryit.asp?filename=trysvg_circle)
+
+Schreiben Sie ein Computerprogramm, die den SVG-Code für eine Zielscheibe erstellt und auf die Kommandozeile ausgibt.
+
+Der Benutzer gibt drei Farben ein (in Englisch, z.B. green, blue, red). Weiters gibt er den gewünschten Radius für den ersten Ring an. Der Radius des zweiten und dritten Rings der Zielscheibe werden dann einfach um den Wert des Radius des ersten Rings erhöht.
+
+Der Einfahheit halber, werden alle Ringe mit Mittelpunkt an der Position x = 100 und y = 100 gezeichnet. Die Größe der Grafik soll 300 x 300 Pixel sein.
+
+Ein Beispielablauf:
+
+```
+------------------------- SVG-Zielscheibe -------------------------
+Bitte geben Sie die Farbe des innersten Rings der Zielscheibe ein:
+green
+Bitte geben Sie die Farbe des zweiten Rings der Zielscheibe ein:
+blue
+Bitte geben Sie die Farbe des dritten Rings der Zielschreibe ein:
+red
+Bitte geben sie den Basisradius an:
+30
+
+SVG-Code für die Zielscheibe:
+
+<svg height="300" width="300">
+  <circle cx="100" cy="100" r="90" stroke="black" stroke-width="3" fill="green" />
+  <circle cx="100" cy="100" r="60" stroke="black" stroke-width="3" fill="blue" />
+  <circle cx="100" cy="100" r="30" stroke="black" stroke-width="3" fill="red" />
+</svg> 
+```
+## Geldschulden
+Die drei Banditen Cosimo Fatface, Lucia Rubberneck und Slick Foot Vito schulden Bonny Brain zusammen 1 Million Liretta.
+
+Schreibe ein Programm, das drei Fließkommazahlen erfragt und in Variablen speichert.
+
+Gib true oder false aus, je nachdem, ob die drei die Summe von 1 Million aufbringen können.
+
+## Piraten-Rum
+Nach einem Raubzug in der Schnapsbrennerei erbeuten Captain CiaoCiao und seine Crew unzählige Flaschen. Jetzt muss die Beute aufgeteilt werden, wobei Captain CiaoCiao grundsätzlich die Hälfte bekommt (bei einer ungeraden Anzahl Flaschen bekommt er weniger als die Hälfte, so großzügig ist der Captain). Alle anderen Räuber sollen exakt den gleichen Anteil bekommen. Aber geht das auf?
+
+Aufgabe:
+
+Schreibe ein Programm, das die erbeutete Anzahl Flaschen von der Kommandozeile einliest und ausgibt, wie viel Captain CiaoCiao davon bekommt.
+
+Gib aus, was für die Crew verbleibt.
+
+Frage nach der Crewgröße, und prüfe, ob die Beute fair und gleich verteilt werden kann, sodass jedes Crewmitglied exakt die gleiche Anzahl Flaschen bekommt. Eine Antwort in der Form true oder false reicht.
+
+Beispiel:
+
+```
+Number of bottles in total?
+123000
+Bottles for the captain: 61500
+Bottles for all crew members: 61500
+Number of crew members?
+100
+Fair share without remainder? true
+```
+
+## Münzen wechseln
+In der Währung Liretta gibt es Lirettamünzen mit den Nennwerten 2 Liretta, 1 Liretta, 50 Lirettacent, 20 Lirettacent, 10 Lirettacent, 5 Lirettacent, 2 Lirettacent und 1 Lirettacent. 100 Lirettacent entsprechen 1 Liretta.
+
+Lege eine neue Klasse CoinMachine an.
+
+Das Programm soll als Erstes eine Fließkommazahl für einen Geldbetrag fordern.
+
+Gib aus, wie der eingegebene Betrag in Lierettamünzen ausgezahlt werden kann. Es sind nicht alle Permutationen gewünscht, sondern nur die kleinste Anzahl Münzen.
+
+Beispielablauf
+
+```
+Bitte gib den zu wechselnden Betrag ein:
+12,91
+Du kannst den Betrag wie folgt in Münzen ausgeben:
+6 x 2 Liretta
+0 x 1 Liretta
+1 x 50 Lirettacent
+2 x 20 Lirettacent
+0 x 10 Lirettacent
+0 x 5 Lirettacent
+0 x 2 Lirettacent
+1 x 1 Lirettacent
+```
