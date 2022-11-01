@@ -14,6 +14,8 @@ public class Main {
         if (betrag > 10){
             betrag = betrag - betrag * 10 / 100;
             System.out.println("Discount Preis: " + betrag);
+        } else {
+            System.out.println("Kein Discount.");
         }
     }
 }
