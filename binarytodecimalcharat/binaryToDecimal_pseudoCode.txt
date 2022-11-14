@@ -1,0 +1,19 @@
+-----------------------------------------------------
+Algorithmus 1: Binär zu Dezimal
+Eingabe: Eingabe von String binary
+Ausgabe: Ausgabe von Integer-Zahlen result
+-----------------------------------------------------
+1: begin
+2:   Ausgabe "Binär zu Dezimal mit charAT."
+3:   Ausgabe "Geben Sie eine Binärzahl ein:"
+4:   Eingabe binary
+5:   lenght = binary.length() - 1
+6:   While lenght <= 0
+7:     String a = String.valueOf(binary.charAt(lenght))
+8:     int y = Integer.parseInt(a) * base
+9:     lenght--;
+10:    base = base * 2
+11:    result = x += y
+12:  Ausgabe: result
+13:end
+-----------------------------------------------------
